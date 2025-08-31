@@ -1,40 +1,72 @@
-
 'use client';
 import { useState } from 'react';
-import { supabase } from '../../lib/supabaseClient';
-import { useRouter } from 'next/navigation';
+import { supabase } from '@/lib/supabaseClient';
 
-export default function PostPage() {
+export default function PostTaskPage() {
   const [title, setTitle] = useState('');
-  const [desc, setDesc] = useState('');
-  const [loc, setLoc] = useState('');
-  const [tip, setTip] = useState('');
-  const router = useRouter();
+  const [description, setDescription] = useState('');
+  const [loading, setLoading] = useState(false);
 
-  const handlePost = async () => {
-    const user = (await supabase.auth.getUser()).data.user;
-    if(!user) return alert('Login first');
-    const paise = Math.round((Number(tip) || 0) * 100);
-    const { error } = await supabase.from('tasks').insert([{
-      title, description: desc, location: loc, tip: paise, author: user.id
-    }]);
-    if(error) return alert(error.message);
-    router.push('/feed');
+  const addTask = async () => {
+    setLoading(true);
+
+    // 1. Get the logged-in user
+    const {
+      data: { user },
+      error: userError,
+    } = await supabase.auth.getUser();
+
+    if (userError || !user) {
+      alert('You must be logged in to post a task.');
+      setLoading(false);
+      return;
+    }
+
+    // 2. Insert task with user.id as the author
+    const { error } = await supabase.from('tasks').insert({
+      title,
+      description,
+      author: user.id, // 👈 critical fix
+    });
+
+    setLoading(false);
+
+    if (error) {
+      console.error(error);
+      alert('Error adding task: ' + error.message);
+    } else {
+      alert('Task posted successfully!');
+      setTitle('');
+      setDescription('');
+    }
   };
 
   return (
-    <div className="min-h-screen p-6 bg-slate-50">
-      <div className="max-w-lg mx-auto bg-white p-6 rounded shadow">
-        <h2 className="text-lg font-semibold mb-3">Post a Task</h2>
-        <input className="border p-2 w-full mb-2" placeholder="Title" value={title} onChange={e=>setTitle(e.target.value)} />
-        <textarea className="border p-2 w-full mb-2" placeholder="Description" value={desc} onChange={e=>setDesc(e.target.value)} />
-        <input className="border p-2 w-full mb-2" placeholder="Location" value={loc} onChange={e=>setLoc(e.target.value)} />
-        <input className="border p-2 w-full mb-2" placeholder="Tip (₹)" value={tip} onChange={e=>setTip(e.target.value)} />
-        <div className="flex gap-2">
-          <button className="px-3 py-1 bg-slate-200 rounded" onClick={()=>history.back()}>Cancel</button>
-          <button className="px-3 py-1 bg-indigo-600 text-white rounded" onClick={handlePost}>Post</button>
-        </div>
-      </div>
+    <div className="flex flex-col items-center justify-center min-h-screen p-6">
+      <h1 className="text-2xl font-bold mb-4">Post a New Task</h1>
+
+      <input
+        type="text"
+        placeholder="Task title"
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
+        className="border p-2 w-64 mb-4 rounded"
+      />
+
+      <textarea
+        placeholder="Task description"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
+        className="border p-2 w-64 mb-4 rounded"
+      />
+
+      <button
+        onClick={addTask}
+        disabled={loading}
+        className="bg-indigo-600 text-white px-4 py-2 rounded disabled:opacity-50"
+      >
+        {loading ? 'Posting...' : 'Post Task'}
+      </button>
     </div>
   );
 }

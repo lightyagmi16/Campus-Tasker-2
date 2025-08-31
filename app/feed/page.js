@@ -1,44 +1,68 @@
-
 'use client';
-import { useEffect, useState } from 'react';
-import { supabase } from '../../lib/supabaseClient';
 import Link from 'next/link';
+
+import { useEffect, useState } from 'react';
+import { supabase } from '@/lib/supabaseClient';
 
 export default function FeedPage() {
   const [tasks, setTasks] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetchTasks();
+  }, []);
 
   const fetchTasks = async () => {
-    const { data, error } = await supabase.from('tasks').select('*').order('created_at', { ascending: false }).limit(50);
-    if (error) console.error(error);
-    else setTasks(data);
+    setLoading(true);
+
+    // 👇 Fetch tasks and join with profiles table
+    const { data, error } = await supabase
+      .from('tasks')
+      .select('id, title, description, created_at, profiles (email)')
+      .order('created_at', { ascending: false });
+
+    setLoading(false);
+
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    setTasks(data || []);
   };
 
-  useEffect(()=>{ fetchTasks(); }, []);
-
   return (
-    <div className="min-h-screen p-6 bg-slate-50">
-      <div className="max-w-3xl mx-auto">
-        <div className="flex items-center justify-between mb-4">
-          <h2 className="text-xl font-semibold">Open Tasks</h2>
-          <Link href="/post"><button className="bg-indigo-600 text-white px-3 py-1 rounded">Post</button></Link>
-        </div>
-        <div className="space-y-3">
-          {tasks.length===0 && <div className="text-slate-500">No tasks yet.</div>}
-          {tasks.map(t=>(
-            <div key={t.id} className="bg-white p-4 rounded shadow">
-              <div className="font-medium">{t.title}</div>
-              <div className="text-sm text-slate-600">{t.description}</div>
-              <div className="mt-2 flex items-center justify-between">
-                <div className="text-xs text-slate-500">{t.location}</div>
-                <div className="text-sm font-medium">{new Intl.NumberFormat('en-IN', {style:'currency', currency:'INR'}).format(t.tip/100)}</div>
-              </div>
-              <div className="mt-2 flex gap-2">
-                <Link href={`/chat/${t.id}`}><button className="px-2 py-1 border rounded">Chat / Accept</button></Link>
-              </div>
+    <div className="p-6 min-h-screen bg-gray-50">
+      <h1 className="text-2xl font-bold mb-6">Task Feed</h1>
+
+      {loading ? (
+        <p>Loading tasks...</p>
+      ) : tasks.length === 0 ? (
+        <p>No tasks yet. Be the first to post!</p>
+      ) : (
+        <div className="space-y-4">
+          {tasks.map((task) => (
+            <div
+              key={task.id}
+              className="p-4 bg-white shadow rounded-lg border"
+            >
+              <h2 className="text-lg font-semibold">{task.title}</h2>
+              <p className="text-gray-600">{task.description}</p>
+              <p className="text-sm text-gray-400 mt-2">
+  Posted by:{' '}
+  <Link
+    href={`/profile/${task.profiles?.id}`}   // 👈 will open /profile/[id]
+    className="text-indigo-600 hover:underline"
+  >
+    {task.profiles?.name || task.profiles?.email || 'Unknown'}
+  </Link>{' '}
+  • {new Date(task.created_at).toLocaleString()}
+</p>
+
             </div>
           ))}
         </div>
-      </div>
+      )}
     </div>
   );
 }
