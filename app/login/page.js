@@ -1,5 +1,6 @@
 'use client';
-import { createClient } from '@supabase/supabase-js';
+import { supabase } from '../../lib/supabaseClient'
+
 import { useState } from 'react';
 
 export default function LoginPage() {

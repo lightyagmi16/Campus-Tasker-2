@@ -12,6 +12,24 @@ exports.id = "app/page";
 exports.ids = ["app/page"];
 exports.modules = {
 
+/***/ "(ssr)/./node_modules/@supabase/realtime-js/dist/main sync recursive":
+/*!************************************************************!*\
+  !*** ./node_modules/@supabase/realtime-js/dist/main/ sync ***!
+  \************************************************************/
+/***/ ((module) => {
+
+function webpackEmptyContext(req) {
+	var e = new Error("Cannot find module '" + req + "'");
+	e.code = 'MODULE_NOT_FOUND';
+	throw e;
+}
+webpackEmptyContext.keys = () => ([]);
+webpackEmptyContext.resolve = webpackEmptyContext;
+webpackEmptyContext.id = "(ssr)/./node_modules/@supabase/realtime-js/dist/main sync recursive";
+module.exports = webpackEmptyContext;
+
+/***/ }),
+
 /***/ "../../client/components/action-async-storage.external":
 /*!*******************************************************************************!*\
   !*** external "next/dist/client/components/action-async-storage.external.js" ***!
@@ -78,6 +96,50 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 /***/ }),
 
+/***/ "http":
+/*!***********************!*\
+  !*** external "http" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("http");
+
+/***/ }),
+
+/***/ "https":
+/*!************************!*\
+  !*** external "https" ***!
+  \************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("https");
+
+/***/ }),
+
+/***/ "punycode":
+/*!***************************!*\
+  !*** external "punycode" ***!
+  \***************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("punycode");
+
+/***/ }),
+
+/***/ "stream":
+/*!*************************!*\
+  !*** external "stream" ***!
+  \*************************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("stream");
+
+/***/ }),
+
 /***/ "url":
 /*!**********************!*\
   !*** external "url" ***!
@@ -86,6 +148,17 @@ module.exports = require("next/dist/compiled/next-server/app-page.runtime.dev.js
 
 "use strict";
 module.exports = require("url");
+
+/***/ }),
+
+/***/ "zlib":
+/*!***********************!*\
+  !*** external "zlib" ***!
+  \***********************/
+/***/ ((module) => {
+
+"use strict";
+module.exports = require("zlib");
 
 /***/ }),
 
@@ -110,6 +183,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fapp%2Fpage.js&server=true!":
+/*!**********************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fapp%2Fpage.js&server=true! ***!
+  \**********************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.bind(__webpack_require__, /*! ./app/page.js */ \"(ssr)/./app/page.js\"))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTJGVXNlcnMlMkZwdXNocGVuZHJhc2hhcm1hJTJGRG93bmxvYWRzJTJGY2FtcHVzLXRhc2tlci1zdGFydGVyJTJGYXBwJTJGcGFnZS5qcyZzZXJ2ZXI9dHJ1ZSEiLCJtYXBwaW5ncyI6IkFBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9jYW1wdXMtdGFza2VyLz9mNGJlIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCgvKiB3ZWJwYWNrTW9kZTogXCJlYWdlclwiICovIFwiL1VzZXJzL3B1c2hwZW5kcmFzaGFybWEvRG93bmxvYWRzL2NhbXB1cy10YXNrZXItc3RhcnRlci9hcHAvcGFnZS5qc1wiKSJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fapp%2Fpage.js&server=true!\n");
+
+/***/ }),
+
 /***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fapp-router.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Ferror-boundary.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Flayout-router.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-boundary.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Frender-from-template-context.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fstatic-generation-searchparams-bailout-provider.js&server=true!":
 /*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fapp-router.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Ferror-boundary.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Flayout-router.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fnot-found-boundary.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Frender-from-template-context.js&modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Fcomponents%2Fstatic-generation-searchparams-bailout-provider.js&server=true! ***!
@@ -120,13 +203,25 @@ eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__w
 
 /***/ }),
 
-/***/ "(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.js&server=true!":
-/*!******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.js&server=true! ***!
-  \******************************************************************************************************************************************************************************************************************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+/***/ "(ssr)/./app/page.js":
+/*!*********************!*\
+  !*** ./app/page.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("Promise.resolve(/*! import() eager */).then(__webpack_require__.t.bind(__webpack_require__, /*! ./node_modules/next/dist/client/link.js */ \"(ssr)/./node_modules/next/dist/client/link.js\", 23))//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9ub2RlX21vZHVsZXMvbmV4dC9kaXN0L2J1aWxkL3dlYnBhY2svbG9hZGVycy9uZXh0LWZsaWdodC1jbGllbnQtZW50cnktbG9hZGVyLmpzP21vZHVsZXM9JTJGVXNlcnMlMkZwdXNocGVuZHJhc2hhcm1hJTJGRG93bmxvYWRzJTJGY2FtcHVzLXRhc2tlci1zdGFydGVyJTJGbm9kZV9tb2R1bGVzJTJGbmV4dCUyRmRpc3QlMkZjbGllbnQlMkZsaW5rLmpzJnNlcnZlcj10cnVlISIsIm1hcHBpbmdzIjoiQUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovL2NhbXB1cy10YXNrZXIvPzYyZDciXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0KC8qIHdlYnBhY2tNb2RlOiBcImVhZ2VyXCIgKi8gXCIvVXNlcnMvcHVzaHBlbmRyYXNoYXJtYS9Eb3dubG9hZHMvY2FtcHVzLXRhc2tlci1zdGFydGVyL25vZGVfbW9kdWxlcy9uZXh0L2Rpc3QvY2xpZW50L2xpbmsuanNcIikiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(ssr)/./node_modules/next/dist/build/webpack/loaders/next-flight-client-entry-loader.js?modules=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fnode_modules%2Fnext%2Fdist%2Fclient%2Flink.js&server=true!\n");
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ FeedPage)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ \"(ssr)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/ssr/react.js\");\n/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);\n/* harmony import */ var _lib_supabaseClient__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../lib/supabaseClient */ \"(ssr)/./lib/supabaseClient.js\");\n/* __next_internal_client_entry_do_not_use__ default auto */ \n\n\nfunction FeedPage() {\n    const [tasks, setTasks] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)([]);\n    const [loading, setLoading] = (0,react__WEBPACK_IMPORTED_MODULE_1__.useState)(true);\n    (0,react__WEBPACK_IMPORTED_MODULE_1__.useEffect)(()=>{\n        fetchTasks();\n    }, []);\n    const fetchTasks = async ()=>{\n        setLoading(true);\n        // 👇 Fetch tasks and join with profiles (name + email + upi_qr)\n        const { data, error } = await _lib_supabaseClient__WEBPACK_IMPORTED_MODULE_2__.supabase.from(\"tasks\").select(\"id, title, description, created_at, profiles (name, email, upi_qr)\").order(\"created_at\", {\n            ascending: false\n        });\n        setLoading(false);\n        if (error) {\n            console.error(error);\n            return;\n        }\n        setTasks(data || []);\n    };\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"p-6 min-h-screen bg-gray-50\",\n        children: [\n            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                className: \"text-2xl font-bold mb-6\",\n                children: \"Task Feed\"\n            }, void 0, false, {\n                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                lineNumber: 34,\n                columnNumber: 7\n            }, this),\n            loading ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: \"Loading tasks...\"\n            }, void 0, false, {\n                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                lineNumber: 37,\n                columnNumber: 9\n            }, this) : tasks.length === 0 ? /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                children: \"No tasks yet. Be the first to post!\"\n            }, void 0, false, {\n                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                lineNumber: 39,\n                columnNumber: 9\n            }, this) : /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                className: \"space-y-4\",\n                children: tasks.map((task)=>/*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                        className: \"p-4 bg-white shadow rounded-lg border\",\n                        children: [\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h2\", {\n                                className: \"text-lg font-semibold\",\n                                children: task.title\n                            }, void 0, false, {\n                                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                lineNumber: 47,\n                                columnNumber: 15\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                className: \"text-gray-600\",\n                                children: task.description\n                            }, void 0, false, {\n                                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                lineNumber: 48,\n                                columnNumber: 15\n                            }, this),\n                            /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                className: \"text-sm text-gray-400 mt-2\",\n                                children: [\n                                    \"Posted by:\",\n                                    \" \",\n                                    task.profiles?.name ? task.profiles.name : task.profiles?.email || \"Unknown\",\n                                    \" \",\n                                    \"• \",\n                                    new Date(task.created_at).toLocaleString()\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                lineNumber: 50,\n                                columnNumber: 15\n                            }, this),\n                            task.profiles?.upi_qr && /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n                                className: \"mt-2\",\n                                children: [\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                                        className: \"text-xs text-gray-500\",\n                                        children: \"UPI QR:\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                        lineNumber: 60,\n                                        columnNumber: 19\n                                    }, this),\n                                    /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"img\", {\n                                        src: task.profiles.upi_qr,\n                                        alt: \"UPI QR\",\n                                        className: \"w-20 h-20 border rounded\"\n                                    }, void 0, false, {\n                                        fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                        lineNumber: 61,\n                                        columnNumber: 19\n                                    }, this)\n                                ]\n                            }, void 0, true, {\n                                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                                lineNumber: 59,\n                                columnNumber: 17\n                            }, this)\n                        ]\n                    }, task.id, true, {\n                        fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                        lineNumber: 43,\n                        columnNumber: 13\n                    }, this))\n            }, void 0, false, {\n                fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                lineNumber: 41,\n                columnNumber: 9\n            }, this)\n        ]\n    }, void 0, true, {\n        fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n        lineNumber: 33,\n        columnNumber: 5\n    }, this);\n}\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9hcHAvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7O0FBQzRDO0FBQ0s7QUFFbEMsU0FBU0c7SUFDdEIsTUFBTSxDQUFDQyxPQUFPQyxTQUFTLEdBQUdKLCtDQUFRQSxDQUFDLEVBQUU7SUFDckMsTUFBTSxDQUFDSyxTQUFTQyxXQUFXLEdBQUdOLCtDQUFRQSxDQUFDO0lBRXZDRCxnREFBU0EsQ0FBQztRQUNSUTtJQUNGLEdBQUcsRUFBRTtJQUVMLE1BQU1BLGFBQWE7UUFDakJELFdBQVc7UUFFWCxnRUFBZ0U7UUFDaEUsTUFBTSxFQUFFRSxJQUFJLEVBQUVDLEtBQUssRUFBRSxHQUFHLE1BQU1SLHlEQUFRQSxDQUNuQ1MsSUFBSSxDQUFDLFNBQ0xDLE1BQU0sQ0FBQyxzRUFDUEMsS0FBSyxDQUFDLGNBQWM7WUFBRUMsV0FBVztRQUFNO1FBRTFDUCxXQUFXO1FBRVgsSUFBSUcsT0FBTztZQUNUSyxRQUFRTCxLQUFLLENBQUNBO1lBQ2Q7UUFDRjtRQUVBTCxTQUFTSSxRQUFRLEVBQUU7SUFDckI7SUFFQSxxQkFDRSw4REFBQ087UUFBSUMsV0FBVTs7MEJBQ2IsOERBQUNDO2dCQUFHRCxXQUFVOzBCQUEwQjs7Ozs7O1lBRXZDWCx3QkFDQyw4REFBQ2E7MEJBQUU7Ozs7O3VCQUNEZixNQUFNZ0IsTUFBTSxLQUFLLGtCQUNuQiw4REFBQ0Q7MEJBQUU7Ozs7O3FDQUVILDhEQUFDSDtnQkFBSUMsV0FBVTswQkFDWmIsTUFBTWlCLEdBQUcsQ0FBQyxDQUFDQyxxQkFDViw4REFBQ047d0JBRUNDLFdBQVU7OzBDQUVWLDhEQUFDTTtnQ0FBR04sV0FBVTswQ0FBeUJLLEtBQUtFLEtBQUs7Ozs7OzswQ0FDakQsOERBQUNMO2dDQUFFRixXQUFVOzBDQUFpQkssS0FBS0csV0FBVzs7Ozs7OzBDQUU5Qyw4REFBQ047Z0NBQUVGLFdBQVU7O29DQUE2QjtvQ0FDN0I7b0NBQ1ZLLEtBQUtJLFFBQVEsRUFBRUMsT0FDWkwsS0FBS0ksUUFBUSxDQUFDQyxJQUFJLEdBQ2xCTCxLQUFLSSxRQUFRLEVBQUVFLFNBQVM7b0NBQVc7b0NBQUk7b0NBQ3hDLElBQUlDLEtBQUtQLEtBQUtRLFVBQVUsRUFBRUMsY0FBYzs7Ozs7Ozs0QkFHNUNULEtBQUtJLFFBQVEsRUFBRU0sd0JBQ2QsOERBQUNoQjtnQ0FBSUMsV0FBVTs7a0RBQ2IsOERBQUNFO3dDQUFFRixXQUFVO2tEQUF3Qjs7Ozs7O2tEQUNyQyw4REFBQ2dCO3dDQUNDQyxLQUFLWixLQUFLSSxRQUFRLENBQUNNLE1BQU07d0NBQ3pCRyxLQUFJO3dDQUNKbEIsV0FBVTs7Ozs7Ozs7Ozs7Ozt1QkFwQlhLLEtBQUtjLEVBQUU7Ozs7Ozs7Ozs7Ozs7Ozs7QUE4QjFCIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2FtcHVzLXRhc2tlci8uL2FwcC9wYWdlLmpzP2JlNjciXSwic291cmNlc0NvbnRlbnQiOlsiJ3VzZSBjbGllbnQnO1xuaW1wb3J0IHsgdXNlRWZmZWN0LCB1c2VTdGF0ZSB9IGZyb20gJ3JlYWN0JztcbmltcG9ydCB7IHN1cGFiYXNlIH0gZnJvbSAnLi4vbGliL3N1cGFiYXNlQ2xpZW50JztcblxuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gRmVlZFBhZ2UoKSB7XG4gIGNvbnN0IFt0YXNrcywgc2V0VGFza3NdID0gdXNlU3RhdGUoW10pO1xuICBjb25zdCBbbG9hZGluZywgc2V0TG9hZGluZ10gPSB1c2VTdGF0ZSh0cnVlKTtcblxuICB1c2VFZmZlY3QoKCkgPT4ge1xuICAgIGZldGNoVGFza3MoKTtcbiAgfSwgW10pO1xuXG4gIGNvbnN0IGZldGNoVGFza3MgPSBhc3luYyAoKSA9PiB7XG4gICAgc2V0TG9hZGluZyh0cnVlKTtcblxuICAgIC8vIPCfkYcgRmV0Y2ggdGFza3MgYW5kIGpvaW4gd2l0aCBwcm9maWxlcyAobmFtZSArIGVtYWlsICsgdXBpX3FyKVxuICAgIGNvbnN0IHsgZGF0YSwgZXJyb3IgfSA9IGF3YWl0IHN1cGFiYXNlXG4gICAgICAuZnJvbSgndGFza3MnKVxuICAgICAgLnNlbGVjdCgnaWQsIHRpdGxlLCBkZXNjcmlwdGlvbiwgY3JlYXRlZF9hdCwgcHJvZmlsZXMgKG5hbWUsIGVtYWlsLCB1cGlfcXIpJylcbiAgICAgIC5vcmRlcignY3JlYXRlZF9hdCcsIHsgYXNjZW5kaW5nOiBmYWxzZSB9KTtcblxuICAgIHNldExvYWRpbmcoZmFsc2UpO1xuXG4gICAgaWYgKGVycm9yKSB7XG4gICAgICBjb25zb2xlLmVycm9yKGVycm9yKTtcbiAgICAgIHJldHVybjtcbiAgICB9XG5cbiAgICBzZXRUYXNrcyhkYXRhIHx8IFtdKTtcbiAgfTtcblxuICByZXR1cm4gKFxuICAgIDxkaXYgY2xhc3NOYW1lPVwicC02IG1pbi1oLXNjcmVlbiBiZy1ncmF5LTUwXCI+XG4gICAgICA8aDEgY2xhc3NOYW1lPVwidGV4dC0yeGwgZm9udC1ib2xkIG1iLTZcIj5UYXNrIEZlZWQ8L2gxPlxuXG4gICAgICB7bG9hZGluZyA/IChcbiAgICAgICAgPHA+TG9hZGluZyB0YXNrcy4uLjwvcD5cbiAgICAgICkgOiB0YXNrcy5sZW5ndGggPT09IDAgPyAoXG4gICAgICAgIDxwPk5vIHRhc2tzIHlldC4gQmUgdGhlIGZpcnN0IHRvIHBvc3QhPC9wPlxuICAgICAgKSA6IChcbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJzcGFjZS15LTRcIj5cbiAgICAgICAgICB7dGFza3MubWFwKCh0YXNrKSA9PiAoXG4gICAgICAgICAgICA8ZGl2XG4gICAgICAgICAgICAgIGtleT17dGFzay5pZH1cbiAgICAgICAgICAgICAgY2xhc3NOYW1lPVwicC00IGJnLXdoaXRlIHNoYWRvdyByb3VuZGVkLWxnIGJvcmRlclwiXG4gICAgICAgICAgICA+XG4gICAgICAgICAgICAgIDxoMiBjbGFzc05hbWU9XCJ0ZXh0LWxnIGZvbnQtc2VtaWJvbGRcIj57dGFzay50aXRsZX08L2gyPlxuICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LWdyYXktNjAwXCI+e3Rhc2suZGVzY3JpcHRpb259PC9wPlxuXG4gICAgICAgICAgICAgIDxwIGNsYXNzTmFtZT1cInRleHQtc20gdGV4dC1ncmF5LTQwMCBtdC0yXCI+XG4gICAgICAgICAgICAgICAgUG9zdGVkIGJ5OnsnICd9XG4gICAgICAgICAgICAgICAge3Rhc2sucHJvZmlsZXM/Lm5hbWVcbiAgICAgICAgICAgICAgICAgID8gdGFzay5wcm9maWxlcy5uYW1lXG4gICAgICAgICAgICAgICAgICA6IHRhc2sucHJvZmlsZXM/LmVtYWlsIHx8ICdVbmtub3duJ317JyAnfVxuICAgICAgICAgICAgICAgIOKAoiB7bmV3IERhdGUodGFzay5jcmVhdGVkX2F0KS50b0xvY2FsZVN0cmluZygpfVxuICAgICAgICAgICAgICA8L3A+XG5cbiAgICAgICAgICAgICAge3Rhc2sucHJvZmlsZXM/LnVwaV9xciAmJiAoXG4gICAgICAgICAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJtdC0yXCI+XG4gICAgICAgICAgICAgICAgICA8cCBjbGFzc05hbWU9XCJ0ZXh0LXhzIHRleHQtZ3JheS01MDBcIj5VUEkgUVI6PC9wPlxuICAgICAgICAgICAgICAgICAgPGltZ1xuICAgICAgICAgICAgICAgICAgICBzcmM9e3Rhc2sucHJvZmlsZXMudXBpX3FyfVxuICAgICAgICAgICAgICAgICAgICBhbHQ9XCJVUEkgUVJcIlxuICAgICAgICAgICAgICAgICAgICBjbGFzc05hbWU9XCJ3LTIwIGgtMjAgYm9yZGVyIHJvdW5kZWRcIlxuICAgICAgICAgICAgICAgICAgLz5cbiAgICAgICAgICAgICAgICA8L2Rpdj5cbiAgICAgICAgICAgICAgKX1cbiAgICAgICAgICAgIDwvZGl2PlxuICAgICAgICAgICkpfVxuICAgICAgICA8L2Rpdj5cbiAgICAgICl9XG4gICAgPC9kaXY+XG4gICk7XG59XG4iXSwibmFtZXMiOlsidXNlRWZmZWN0IiwidXNlU3RhdGUiLCJzdXBhYmFzZSIsIkZlZWRQYWdlIiwidGFza3MiLCJzZXRUYXNrcyIsImxvYWRpbmciLCJzZXRMb2FkaW5nIiwiZmV0Y2hUYXNrcyIsImRhdGEiLCJlcnJvciIsImZyb20iLCJzZWxlY3QiLCJvcmRlciIsImFzY2VuZGluZyIsImNvbnNvbGUiLCJkaXYiLCJjbGFzc05hbWUiLCJoMSIsInAiLCJsZW5ndGgiLCJtYXAiLCJ0YXNrIiwiaDIiLCJ0aXRsZSIsImRlc2NyaXB0aW9uIiwicHJvZmlsZXMiLCJuYW1lIiwiZW1haWwiLCJEYXRlIiwiY3JlYXRlZF9hdCIsInRvTG9jYWxlU3RyaW5nIiwidXBpX3FyIiwiaW1nIiwic3JjIiwiYWx0IiwiaWQiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(ssr)/./app/page.js\n");
+
+/***/ }),
+
+/***/ "(ssr)/./lib/supabaseClient.js":
+/*!*******************************!*\
+  !*** ./lib/supabaseClient.js ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   supabase: () => (/* binding */ supabase)\n/* harmony export */ });\n/* harmony import */ var _supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @supabase/supabase-js */ \"(ssr)/./node_modules/@supabase/supabase-js/dist/module/index.js\");\n\nconst supabaseUrl = \"https://peazfchuhiicejdbxixu.supabase.co\";\nconst supabaseAnonKey = \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBlYXpmY2h1aGlpY2VqZGJ4aXh1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTY1ODE2MzksImV4cCI6MjA3MjE1NzYzOX0.De5Gq9QdN7BhupsvT1qDM80HOxf1hvmDLarkPQemziQ\";\nif (!supabaseUrl || !supabaseAnonKey) {\n    throw new Error(\"Missing Supabase environment variables\");\n}\nconst supabase = (0,_supabase_supabase_js__WEBPACK_IMPORTED_MODULE_0__.createClient)(supabaseUrl, supabaseAnonKey);\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHNzcikvLi9saWIvc3VwYWJhc2VDbGllbnQuanMiLCJtYXBwaW5ncyI6Ijs7Ozs7QUFBb0Q7QUFFcEQsTUFBTUMsY0FBY0MsMENBQW9DO0FBQ3hELE1BQU1HLGtCQUFrQkgsa05BQXlDO0FBRWpFLElBQUksQ0FBQ0QsZUFBZSxDQUFDSSxpQkFBaUI7SUFDcEMsTUFBTSxJQUFJRSxNQUFNO0FBQ2xCO0FBRU8sTUFBTUMsV0FBV1IsbUVBQVlBLENBQUNDLGFBQWFJLGlCQUFnQiIsInNvdXJjZXMiOlsid2VicGFjazovL2NhbXB1cy10YXNrZXIvLi9saWIvc3VwYWJhc2VDbGllbnQuanM/NWYwZCJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBjcmVhdGVDbGllbnQgfSBmcm9tICdAc3VwYWJhc2Uvc3VwYWJhc2UtanMnXG5cbmNvbnN0IHN1cGFiYXNlVXJsID0gcHJvY2Vzcy5lbnYuTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMXG5jb25zdCBzdXBhYmFzZUFub25LZXkgPSBwcm9jZXNzLmVudi5ORVhUX1BVQkxJQ19TVVBBQkFTRV9BTk9OX0tFWVxuXG5pZiAoIXN1cGFiYXNlVXJsIHx8ICFzdXBhYmFzZUFub25LZXkpIHtcbiAgdGhyb3cgbmV3IEVycm9yKFwiTWlzc2luZyBTdXBhYmFzZSBlbnZpcm9ubWVudCB2YXJpYWJsZXNcIilcbn1cblxuZXhwb3J0IGNvbnN0IHN1cGFiYXNlID0gY3JlYXRlQ2xpZW50KHN1cGFiYXNlVXJsLCBzdXBhYmFzZUFub25LZXkpXG4iXSwibmFtZXMiOlsiY3JlYXRlQ2xpZW50Iiwic3VwYWJhc2VVcmwiLCJwcm9jZXNzIiwiZW52IiwiTkVYVF9QVUJMSUNfU1VQQUJBU0VfVVJMIiwic3VwYWJhc2VBbm9uS2V5IiwiTkVYVF9QVUJMSUNfU1VQQUJBU0VfQU5PTl9LRVkiLCJFcnJvciIsInN1cGFiYXNlIl0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///(ssr)/./lib/supabaseClient.js\n");
 
 /***/ }),
 
@@ -159,7 +254,25 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ Home)\n/* harmony export */ });\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react/jsx-dev-runtime */ \"(rsc)/./node_modules/next/dist/server/future/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js\");\n/* harmony import */ var react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__);\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ \"(rsc)/./node_modules/next/link.js\");\n/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);\n\n\nfunction Home() {\n    return /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n        className: \"min-h-screen flex items-center justify-center\",\n        children: /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"div\", {\n            className: \"text-center\",\n            children: [\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"h1\", {\n                    className: \"text-3xl font-bold\",\n                    children: \"Campus Tasker\"\n                }, void 0, false, {\n                    fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                    lineNumber: 6,\n                    columnNumber: 7\n                }, this),\n                /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)(\"p\", {\n                    className: \"mt-4\",\n                    children: [\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                            href: \"/login\",\n                            className: \"text-indigo-600\",\n                            children: \"Login\"\n                        }, void 0, false, {\n                            fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                            lineNumber: 7,\n                            columnNumber: 27\n                        }, this),\n                        \" • \",\n                        /*#__PURE__*/ (0,react_jsx_dev_runtime__WEBPACK_IMPORTED_MODULE_0__.jsxDEV)((next_link__WEBPACK_IMPORTED_MODULE_1___default()), {\n                            href: \"/feed\",\n                            className: \"text-indigo-600\",\n                            children: \"Feed\"\n                        }, void 0, false, {\n                            fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                            lineNumber: 7,\n                            columnNumber: 90\n                        }, this)\n                    ]\n                }, void 0, true, {\n                    fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n                    lineNumber: 7,\n                    columnNumber: 7\n                }, this)\n            ]\n        }, void 0, true, {\n            fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n            lineNumber: 5,\n            columnNumber: 5\n        }, this)\n    }, void 0, false, {\n        fileName: \"/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js\",\n        lineNumber: 4,\n        columnNumber: 3\n    }, this);\n}\n;\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiKHJzYykvLi9hcHAvcGFnZS5qcyIsIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7QUFDNkI7QUFDZCxTQUFTQztJQUFRLHFCQUM5Qiw4REFBQ0M7UUFBSUMsV0FBVTtrQkFDYiw0RUFBQ0Q7WUFBSUMsV0FBVTs7OEJBQ2IsOERBQUNDO29CQUFHRCxXQUFVOzhCQUFxQjs7Ozs7OzhCQUNuQyw4REFBQ0U7b0JBQUVGLFdBQVU7O3NDQUFPLDhEQUFDSCxrREFBSUE7NEJBQUNNLE1BQUs7NEJBQVNILFdBQVU7c0NBQWtCOzs7Ozs7d0JBQVk7c0NBQUcsOERBQUNILGtEQUFJQTs0QkFBQ00sTUFBSzs0QkFBUUgsV0FBVTtzQ0FBa0I7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBR3ZJIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vY2FtcHVzLXRhc2tlci8uL2FwcC9wYWdlLmpzP2JlNjciXSwic291cmNlc0NvbnRlbnQiOlsiXG5pbXBvcnQgTGluayBmcm9tICduZXh0L2xpbmsnO1xuZXhwb3J0IGRlZmF1bHQgZnVuY3Rpb24gSG9tZSgpeyByZXR1cm4gKFxuICA8ZGl2IGNsYXNzTmFtZT1cIm1pbi1oLXNjcmVlbiBmbGV4IGl0ZW1zLWNlbnRlciBqdXN0aWZ5LWNlbnRlclwiPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwidGV4dC1jZW50ZXJcIj5cbiAgICAgIDxoMSBjbGFzc05hbWU9XCJ0ZXh0LTN4bCBmb250LWJvbGRcIj5DYW1wdXMgVGFza2VyPC9oMT5cbiAgICAgIDxwIGNsYXNzTmFtZT1cIm10LTRcIj48TGluayBocmVmPVwiL2xvZ2luXCIgY2xhc3NOYW1lPVwidGV4dC1pbmRpZ28tNjAwXCI+TG9naW48L0xpbms+IOKAoiA8TGluayBocmVmPVwiL2ZlZWRcIiBjbGFzc05hbWU9XCJ0ZXh0LWluZGlnby02MDBcIj5GZWVkPC9MaW5rPjwvcD5cbiAgICA8L2Rpdj5cbiAgPC9kaXY+XG4pfTtcbiJdLCJuYW1lcyI6WyJMaW5rIiwiSG9tZSIsImRpdiIsImNsYXNzTmFtZSIsImgxIiwicCIsImhyZWYiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///(rsc)/./app/page.js\n");
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   $$typeof: () => (/* binding */ $$typeof),
+/* harmony export */   __esModule: () => (/* binding */ __esModule),
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! next/dist/build/webpack/loaders/next-flight-loader/module-proxy */ "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-loader/module-proxy.js");
+
+const proxy = (0,next_dist_build_webpack_loaders_next_flight_loader_module_proxy__WEBPACK_IMPORTED_MODULE_0__.createProxy)(String.raw`/Users/pushpendrasharma/Downloads/campus-tasker-starter/app/page.js`)
+
+// Accessing the __esModule property and exporting $$typeof are required here.
+// The __esModule getter forces the proxy target to create the default export
+// and the $$typeof value is for rendering logic to determine if the module
+// is a client boundary.
+const { __esModule, $$typeof } = proxy;
+const __default__ = proxy.default;
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (__default__);
 
 /***/ })
 
@@ -170,7 +283,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 var __webpack_require__ = require("../webpack-runtime.js");
 __webpack_require__.C(exports);
 var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@swc"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
+var __webpack_exports__ = __webpack_require__.X(0, ["vendor-chunks/next","vendor-chunks/@supabase","vendor-chunks/@swc","vendor-chunks/whatwg-url","vendor-chunks/tr46","vendor-chunks/webidl-conversions"], () => (__webpack_exec__("(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fpage&page=%2Fpage&appPaths=%2Fpage&pagePath=private-next-app-dir%2Fpage.js&appDir=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter%2Fapp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=%2FUsers%2Fpushpendrasharma%2FDownloads%2Fcampus-tasker-starter&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!")));
 module.exports = __webpack_exports__;
 
 })();

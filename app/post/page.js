@@ -1,6 +1,6 @@
 'use client';
 import { useState } from 'react';
-import { supabase } from '@/lib/supabaseClient';
+import { supabase } from '../lib/supabaseClient';
 
 export default function PostTaskPage() {
   const [title, setTitle] = useState('');
@@ -23,6 +23,8 @@ export default function PostTaskPage() {
     }
 
     // 2. Insert task with user.id as the author
+    console.log("Posting task with author:", user.id);
+
     const { error } = await supabase.from('tasks').insert({
       title,
       description,
